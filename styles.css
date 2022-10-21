@@ -1,0 +1,373 @@
+/*
+Taken from https://www.joshwcomeau.com/css/custom-css-reset/
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+
+body {
+  font-family:'Inter';
+  color: black;
+  background-color: #FBFBFB;
+  margin: 2rem 7rem 2rem;
+  text-align: center;
+  min-width: 375px !important;
+  border: 1.5px solid #bbbbbb;
+  border-top: none;
+  border-bottom: none;
+  padding: 0 2rem;
+  fill: #02004D;
+}
+
+#header {
+  margin: 1% 1%;
+  display: inline-grid;
+  gap: 4px;
+  grid-auto-flow: column;
+}
+
+.apply-button{
+  border: 3px solid #02004D;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  border-radius: 0.3rem;
+  white-space: nowrap;
+  text-overflow: fade;
+  overflow: hidden;
+  color: #02004D;
+  position:relative;
+  bottom: 0.5rem;
+}
+
+.apply-button:hover {
+  border: 3px solid #717171;
+  background:#051285;
+  color: white !important;
+  content: "Completed!" !important;
+}
+
+.apply-button:active {
+  background: black;
+  color: white;
+}
+
+.menubar {
+  border: 2px solid #02004D;
+  background-color: #02004D;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.3rem;
+  white-space: nowrap;
+  text-overflow: fade;
+  overflow: auto;
+  color: white;
+  position:relative;
+  bottom: 0.5rem;
+}
+.menu-item {
+  width: auto;
+  height: 2rem;
+}
+
+.brown-item {
+  width: 5rem;
+  height: auto;
+}
+
+.ipp-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.gallery-container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.ipp {
+  position: relative;
+  bottom: 0.3rem;
+}
+
+
+.uev-header {
+  text-align: center;
+}
+
+#mainhr {
+  clear: both;
+  width: 30%;
+  height: 0.25rem;
+  align: center;
+  background-color: #02004D;
+  margin: 0 auto;
+}
+
+
+#upevents, #intro, #login {
+  display: inline-grid;
+  margin: 1% 2%
+}
+
+
+.ctext {
+  display: inline-grid;
+  text-align: justify;
+  max-width: fit-content;
+  min-width: 450px;
+  place-content: center;
+  margin-left:2rem;
+  margin-right:2rem;
+  border-radius: 0.3rem;
+  border: 1px solid grey;
+  padding: 0.5rem 2rem;
+}
+
+#uevhr {
+  clear: both;
+  width: 30%;
+  height: 0.25rem;
+  align: center;
+  background-color: #02004D;
+  margin: 1rem auto;
+}
+
+.uev {
+  border: 1px solid darkgray;
+  margin-bottom: 0.1rem;
+  background: whitesmoke;
+  padding: 0.6rem 0.3rem 0.6rem 0.8rem;
+  border-radius: 0.3rem;
+  color: grey;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  box-shadow: 0.1rem 0.1rem 0.1rem darkgray;
+  white-space: nowrap;
+  text-overflow: fade;
+  overflow: hidden;
+}
+
+.uev:hover {
+  border: 0px solid #1292e1;
+  padding: 0.6rem 0.3rem 0.6rem 0.8rem;
+  background: #717171;
+  color: white !important;
+  content: "Completed!" !important;
+}
+
+.uev:active {
+  background: black;
+  color: white;
+}
+
+#contact{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-button {
+  border: 2px solid #051285;
+  margin-bottom: 0.1rem;
+  background: whitesmoke;
+  padding: 0.3rem 0.2rem 0.3rem 2rem;
+  border-radius: 0.3rem;
+  color: #02004D;
+  box-shadow: 0.1rem 0.1rem 0.1rem darkgray;
+  white-space: nowrap;
+  text-overflow: fade;
+  overflow: hidden;
+}
+
+.contact-button:hover {
+  border: 0px solid lightblue;
+  background: lightblue;
+  color: white !important;
+  content: "Completed!" !important;
+}
+
+.contact-button:active {
+  background: black;
+  color: white;
+}
+
+#logh {
+  width: 5rem;
+  height: 0.25rem;
+  align: center;
+  background-color: #02004D;
+  margin: 0.6rem 0 0 2.1rem;
+}
+
+
+
+.log-stu, .log-em{
+  border: 1px solid darkgray;
+  margin-bottom: 0.1rem;
+  background: whitesmoke;
+  padding: 0.6rem 0.5rem 0.8rem 0.8rem;
+  border-radius: 0.3rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem darkgray;
+  white-space: nowrap;
+  text-overflow: fade;
+  overflow: hidden;
+}
+
+.log-stu {
+  color: midnightblue;
+}
+
+.log-em {
+  color: black;
+}
+
+.log-stu:hover {
+  border: 1px solid #1292e1;
+  background: #051285;
+  color: white !important;
+  content: "Completed!" !important;
+}
+
+.log-stu:active {
+  background: #051285;
+  color: white;
+}
+
+.log-em:hover {
+  border: 1px solid darkgray;
+  background: #717171;
+  color: white !important;
+  content: "Completed!" !important;
+}
+
+.log-em:active {
+  background: black;
+  color: white;
+}
+
+/*Code from https://www.tutorialspoint.com/how-to-create-an-image-slider-using-html-css-and-javascript*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 60rem;
+  max-height: 35rem;
+  crop: auto;
+  position: relative;
+  margin: auto;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+}
+
+.slideshow-container img{
+  border-radius: 0.5rem;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  padding: 2rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit seethrough */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.text {
+  color: lightgrey;
+  background-color: rgba(0,0,0,.5);
+  background-blend-mode: overlay;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  bottom: 8px;
+  width: 15%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 0.5rem;
+  width: 0.5rem;
+  margin: 0 0.1rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}

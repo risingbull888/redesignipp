@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <title>CS IPP</title>
+    <link rel="stylesheet" href="styles.css" />
+      <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
+  </head>
+
+  <body>
+    <div id = "header">
+        <img class="menu-item" src="./images/menu.png" alt="Menu Button">
+    </div>
+    <div id = "header">
+        <img class="brown-item" src="./images/brown_cs_logo_1.png" alt="Brown CS Logo">
+    </div>
+    <div id = "header">
+        <h1 class = "ipp"><b>Industry Partners Program</b></h1>
+    </div>
+    <div id = "header">
+        <p class= "menubar">&nbsp About  |   Why Join IPP?   |  Current Partners  |   Events   |   Member Tiers &nbsp</p>
+    </div>
+    <div id = "header">
+        <button class="apply-button" type="submit" name="completed" value=""><b>Apply Now</b></button>
+    </div>
+
+
+    <!-- Code from https://www.tutorialspoint.com/how-to-create-an-image-slider-using-html-css-and-javascript -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/CIT.jpg" style="width:100%">
+            <div class="text">CIT Building</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/teaching.jpg" style="width:100%;">
+            <div class="text">Brown CS Teaching</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/Careerfair2.jpg" style="width:100%">
+            <div class="text">Brown Career Fair</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+    <!-- -->
+    <br>
+    <hr id = "mainhr">
+    <br>
+
+        <div id = upevents>
+            <p class="uev-header"><b>Upcoming Events</b></p>
+            <hr id = "uevhr">
+            <button class="uev" type="submit" name="completed" value="">⚛ Info Session  &nbsp &nbsp +</button>
+            <button class="uev" type="submit" name="completed" value="">🎗 Info Session  &nbsp &nbsp +</button>
+            <button class="uev" type="submit" name="completed" value="">🍎 Info Session  &nbsp &nbsp +</button>
+            <button class="uev" type="submit" name="completed" value="">🌎 Info Session  &nbsp &nbsp +</button>
+            <button class="uev" type="submit" name="completed" value="">🌲 Info Session  &nbsp &nbsp +</button>
+        </div>
+
+        <div id = intro>
+            <h2>What is the Industry Partners Program (IPP)?</h2>
+            <br>
+            <p class="ctext">The Department of Computer Science at Brown University runs an industry partners program
+                that offers corporations and non-profit organizations opportunities to collaborate with faculty, learn
+                about Brown's research, and meet Brown students who are looking for employment.
+                <i><small>Learn More ></small></i>
+            </p>
+        </div>
+
+        <div id = login>
+            <p class="login-header"><b>Login Portal</b></p>
+            <hr id = "logh">
+            <br>
+            <button class="log-stu" type="submit" name="completed" value="">🎓 Students &nbsp &nbsp &nbsp ></button>
+            <button class="log-em" type="submit" name="completed" value="">🏛️ Employers  &nbsp &nbsp ></button>
+        </div>
+    <br>
+    <div id = contact>
+        <button class="contact-button" type="submit" name="completed" value=""><b> Contact Us !</b>  &nbsp✉ &nbsp</button>
+    </div>
+
+
+
+
+
+  </body>
+
+</html>
